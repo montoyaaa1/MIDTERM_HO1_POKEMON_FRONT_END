@@ -1,3 +1,5 @@
-Add comparison here
+The two code snippets represent different approaches to building a Pokémon search application, one using React and the other using vanilla JavaScript.
 
-blah blah blah
+In the React code, state management is handled using the useState hook. The pokemon and error states track the fetched data and any potential errors. When the state changes, React automatically re-renders the component, ensuring the UI stays in sync with the application state. This declarative approach makes it easy to manage dynamic updates and UI changes. Error handling is also streamlined, as the application conditionally renders an error message if something goes wrong, all within the React component structure, which is modular and easy to extend.
+
+On the other hand, the vanilla JavaScript code uses direct DOM manipulation to update the UI. There is no state management like in React. Instead, the DOM is manually updated with innerHTML whenever data is fetched or an error occurs. While this approach works well for small applications, it becomes harder to maintain as the app grows. The error handling is simpler, as the error message is directly displayed in the HTML. This procedural approach doesn’t offer the scalability or structure that React does.
